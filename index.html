@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUNDAWA AGRO ALLIED NIG LTD – Quality Fertilizers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables for consistent theming */
+        :root {
+            --primary-color: #2d5016;
+            --secondary-color: #4a7c1f;
+            --accent-color: #ffd700;
+            --light-color: #f8f9fa;
+            --dark-color: #1a3310;
+            --text-color: #2d5016;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 10%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #ffed4a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .ceo-bio {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .ceo-bio:hover {
+            transform: translateY(-10px);
+        }
+
+        .ceo-image {
+            width: 400px;
+            height: 80px;
+           
+        }
+        .w-17 {
+            width: 700px;
+            height: 200px;
+        }
+        .w-16 {
+            width: 100px;
+            height: 80px;
+        }
+
+        .ceo-bio h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Products Section */
+        .products-section {
+            background: #f0f7e6;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .product-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .product-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item i {
+            width: 40px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 0.8rem;
+            }
+
+            .hero {
+                padding: 6rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .ceo-bio, .contact-info {
+                padding: 1.5rem;
+            }
+            
+            .product-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img alt="logo" class="w-16" src="photo_2025-11-22_18-03-09.jpg">
+                    GUNDAWA<span>AGRO</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Quality Fertilizers for Bountiful Harvests</h1>
+            <p>Your trusted partner in agricultural excellence and sustainable farming solutions</p>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Leading the way in agricultural innovation</p>
+            </div>
+            <div class="about-content">
+                <div class="fade-in">
+                    <h3>Our Mission</h3>
+                    <p>At GUNDAWA AGRO ALLIED NIG LTD, we are committed to providing high-quality fertilizers that help farmers achieve maximum yield and sustainable agricultural practices. With years of experience in the industry, we understand the unique needs of Nigerian farmers.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Premium quality fertilizers</li>
+                        <li>Expert agricultural advice</li>
+                        <li>Reliable customer support</li>
+                        <li>Nationwide delivery</li>
+                        <li>Competitive pricing</li>
+                    </ul>
+                </div>
+                <div class="ceo-bio fade-in">
+                    <div class="ceo-image">
+                        <img alt="logo" class="w-17" src="photo_2025-11-22_18-03-15.jpg">
+                       
+                    </div>
+                    <h3>CEO's Message</h3>
+                    <p>At GUNDAWA AGRO ALLIED, we believe in empowering farmers with the right tools and knowledge to transform agriculture in Nigeria. Our commitment to quality and customer satisfaction drives everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Comprehensive range of agricultural solutions</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>NPK Fertilizers</h3>
+                    <p>Balanced nutrient formulas for optimal plant growth and yield enhancement.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Urea Fertilizers</h3>
+                    <p>High-nitrogen content fertilizers for vigorous plant growth and development.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Organic Fertilizers</h3>
+                    <p>Eco-friendly solutions for sustainable farming and soil health improvement.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Specialty Blends</h3>
+                    <p>Custom formulations tailored to specific crops and soil conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for all your agricultural needs</p>
+            </div>
+            
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>No.45 Wharf Road PZ, Zaria, Kaduna State, Nigeria</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>gundawaagroallied24@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+234 706 509 9709</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Monday – Saturday: 8:00 AM – 6:00 PM</span>
+                </div>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="tel:+2347065099709" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/2347065099709" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="mailto:gundawaagroallied24@gmail.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Send Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GUNDAWA AGRO ALLIED NIG LTD. All rights reserved.</p>
+            <p>Quality Fertilizers for a Greener Nigeria</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(el => {
+            fadeInObserver.observe(el);
+        });
+
+        // Add active class to navigation links on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUNDAWA AGRO ALLIED NIG LTD – Quality Fertilizers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables for consistent theming */
+        :root {
+            --primary-color: #2d5016;
+            --secondary-color: #4a7c1f;
+            --accent-color: #ffd700;
+            --light-color: #f8f9fa;
+            --dark-color: #1a3310;
+            --text-color: #2d5016;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #ffed4a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(45, 80, 22, 0.8)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .ceo-bio {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .ceo-bio:hover {
+            transform: translateY(-10px);
+        }
+
+        .ceo-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 5px solid var(--primary-color);
+            background: #f0f7e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 3rem;
+        }
+
+        .ceo-bio h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Products Section */
+        .products-section {
+            background: #f0f7e6;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .product-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .product-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item i {
+            width: 40px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 0.8rem;
+            }
+
+            .hero {
+                padding: 6rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .ceo-bio, .contact-info {
+                padding: 1.5rem;
+            }
+            
+            .product-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    GUNDAWA<span>AGRO</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Quality Fertilizers for Bountiful Harvests</h1>
+            <p>Your trusted partner in agricultural excellence and sustainable farming solutions</p>
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Leading the way in agricultural innovation</p>
+            </div>
+            <div class="about-content">
+                <div class="fade-in">
+                    <h3>Our Mission</h3>
+                    <p>At GUNDAWA AGRO ALLIED NIG LTD, we are committed to providing high-quality fertilizers that help farmers achieve maximum yield and sustainable agricultural practices. With years of experience in the industry, we understand the unique needs of Nigerian farmers.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Premium quality fertilizers</li>
+                        <li>Expert agricultural advice</li>
+                        <li>Reliable customer support</li>
+                        <li>Nationwide delivery</li>
+                        <li>Competitive pricing</li>
+                    </ul>
+                </div>
+                <div class="ceo-bio fade-in">
+                    <div class="ceo-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>CEO's Message</h3>
+                    <p>At GUNDAWA AGRO ALLIED, we believe in empowering farmers with the right tools and knowledge to transform agriculture in Nigeria. Our commitment to quality and customer satisfaction drives everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Comprehensive range of agricultural solutions</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>NPK Fertilizers</h3>
+                    <p>Balanced nutrient formulas for optimal plant growth and yield enhancement.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Urea Fertilizers</h3>
+                    <p>High-nitrogen content fertilizers for vigorous plant growth and development.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Organic Fertilizers</h3>
+                    <p>Eco-friendly solutions for sustainable farming and soil health improvement.</p>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Specialty Blends</h3>
+                    <p>Custom formulations tailored to specific crops and soil conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for all your agricultural needs</p>
+            </div>
+            
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>No.45 Wharf Road PZ, Zaria, Kaduna State, Nigeria</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>gundawaagroallied24@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+234 706 509 9709</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Monday – Saturday: 8:00 AM – 6:00 PM</span>
+                </div>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="tel:+2347065099709" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/2347065099709" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="mailto:gundawaagroallied24@gmail.com" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Send Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GUNDAWA AGRO ALLIED NIG LTD. All rights reserved.</p>
+            <p>Quality Fertilizers for a Greener Nigeria</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(el => {
+            fadeInObserver.observe(el);
+        });
+
+        // Add active class to navigation links on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
